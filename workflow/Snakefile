@@ -2,17 +2,42 @@
 # After configuring, running snakemake -n in a clone of this repository should successfully execute a dry-run of the workflow.
 
 
-report: "report/workflow.rst"
+#report: "report/workflow.rst"
 
 # Allow users to fix the underlying OS via singularity.
-singularity: "docker://continuumio/miniconda3"
+#singularity: "docker://continuumio/miniconda3"
 
+
+# Subsequent target rules can be specified below. They should start with all_*.
+
+
+include: "rules/ini.smk"
+include: "rules/refine.smk"
+include: "rules/correct.smk"
+include: "rules/align.smk"
+include: "rules/classify.smk"
+include: "rules/seurat.smk"
+include: "rules/report.smk"
+include: "rules/flncalign.smk"
 
 rule all:
-    input:
-        # The first rule should define the default target files
-        # Subsequent target rules can be specified below. They should start with all_*.
-
-
-include: "rules/common.smk"
-include: "rules/other.smk"
+    input: 
+        "results/" + sample + ".segmented.bam",
+        "results/" + sample + ".5p--3p.bam",
+        "results/" + sample + ".flnc.bam",
+        "results/" + sample + ".corrected.sorted.bam",
+        "results/" + sample + ".bcstats.tsv",
+        "results/" + sample + ".dedup.bam",
+        "results/" + sample + ".mapped.bam",
+        "results/" + sample + ".collapsed.sorted.gff",
+        "results/" + sample + "_classification.txt",
+        "results/" + sample + "_junctions.txt", 
+        "results/" + sample + "_classification.filtered_lite_classification.txt",
+        "results/" + sample + "_classification/", # + sample + "_classification.annotated.info.csv",
+      	"results/" + sample + "_classification_filtered/", # + sample + "_classification_filtered.annotated.info.csv",
+        "results/tables/" + sample + ".MAS-SC.stats.csv",
+        "results/" + sample + ".flagstat.txt",
+        "results/plots/" + sample + ".knee.png",
+	    "results/" + sample + ".flnc.fastq",
+        "results/" + sample + ".flnc.mapped.bam.bai",
+        
