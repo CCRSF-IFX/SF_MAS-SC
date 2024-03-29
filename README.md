@@ -51,7 +51,7 @@ After successful execution, you can create a self-contained interactive HTML rep
 
     snakemake --report report.html
 
-To access the results, including files, plots and tables, navigate to the 'results' folder.
+To access the results, including files, plots and tables, navigate to the `results` folder.
 
 ### References
 Al'Khafaji et al., (2021) High-throughput RNA isoform sequencing using programmable cDNA concatenation. bioRxiv, 10.01.462818
