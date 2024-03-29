@@ -1,0 +1,32 @@
+unaligned: "/mnt/ccrsf-static/Analysis/choudharis2/JiYeonChoi_JinhuYin_CS035134_21cDNA_081023/SF_MAS-SC/data"
+analysis: "/mnt/ccrsf-static/Analysis/choudharis2/JiYeonChoi_JinhuYin_CS035134_21cDNA_081023/SF_MAS-SC/"
+reference: "hg38"
+lib: "T-12U-16B"
+method: "knee"
+capture: "3prime"
+sample: "NCI_17_22"
+MAS_SMRTbell_adapters_barcodes: "resources/mas16_primers.fasta"
+ref : "/mnt/ccrsf-ifx/RefGenomes/10X_REF/refdata-gex-GRCh38-2020-A/fasta/genome.fa"
+gtf: "/mnt/ccrsf-ifx/RefGenomes/10X_REF/refdata-gex-GRCh38-2020-A/genes/genes.gtf"
+polya: "resources/mouse_and_human.polyA_motif.txt"
+cagepeak: "resources/human.refTSS_v3.1.hg38.10X.chr.bed"
+p3: "resources/10X_Chromium_Single_Cell_3p_cDNA_Primers.fasta"
+p5: "resources/10X_Chromium_Single_Cell_5p_cDNA_Primers.fasta"
+whitelist_p3: "resources/3M-february-2018-REVERSE-COMPLEMENTED.txt.gz"
+whitelist_p5: "resources/737K_august_2016.txt.gz"
+
+
+#Cluster assign
+large:
+  mem: 400000
+  runtime: 96:00:00
+  partition: norm
+medium:
+  mem: 128000
+  runtime: 1500
+  partition: "norm"
+small:
+  mem: 32000
+  runtime: 4:00:00
+  partition: norm
+
