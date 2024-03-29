@@ -1,15 +1,15 @@
-unaligned: "/mnt/ccrsf-static/Analysis/choudharis2/JiYeonChoi_JinhuYin_CS035134_21cDNA_081023/SF_MAS-SC/data"
-analysis: "/mnt/ccrsf-static/Analysis/choudharis2/JiYeonChoi_JinhuYin_CS035134_21cDNA_081023/SF_MAS-SC/"
-reference: "hg38"
-lib: "T-12U-16B"
-method: "knee"
-capture: "3prime"
-sample: "NCI_17_22"
+unaligned: "RAWDATA" # The hifi.bam file obtainied from the sequencer
+analysis: "ANALYSIS" # folder where the git repo is cloned and analysis is performed
+reference: "reference"
+lib: "T-12U-16B" # UMI/Barcode designs
+method: "knee" # Cell Calling Methods knne/percentile 
+capture: "3prime" # 10X capture 3prime/5prime
+sample: "samplename"
 MAS_SMRTbell_adapters_barcodes: "resources/mas16_primers.fasta"
-ref : "/mnt/ccrsf-ifx/RefGenomes/10X_REF/refdata-gex-GRCh38-2020-A/fasta/genome.fa"
-gtf: "/mnt/ccrsf-ifx/RefGenomes/10X_REF/refdata-gex-GRCh38-2020-A/genes/genes.gtf"
+ref : "reference fasta file"
+gtf: "annotation file (gtf)"
 polya: "resources/mouse_and_human.polyA_motif.txt"
-cagepeak: "resources/human.refTSS_v3.1.hg38.10X.chr.bed"
+cagepeak: "resources/human.refTSS_v3.1.hg38.10X.chr.bed" # for human
 p3: "resources/10X_Chromium_Single_Cell_3p_cDNA_Primers.fasta"
 p5: "resources/10X_Chromium_Single_Cell_5p_cDNA_Primers.fasta"
 whitelist_p3: "resources/3M-february-2018-REVERSE-COMPLEMENTED.txt.gz"

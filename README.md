@@ -58,3 +58,4 @@ Al'Khafaji et al., (2021) High-throughput RNA isoform sequencing using programma
 
 https://www.pacb.com/wp-content/uploads/Application-note-MAS-Seq-for-single-cell-isoform-sequencing.pdf
 
+https://isoseq.how/
