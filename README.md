@@ -19,7 +19,7 @@ In the SF_MAS-SC workflow, full-length cDNA sequences are processed and classifi
 
 ### Step 2: Configure workflow
 
-Configure the workflow according to your needs via editing the files in the `config/` folder. Adjust `config.yaml` to configure the workflow execution, and `samples.tsv` to specify your sample setup.
+Configure the workflow according to your needs via editing the files in the `config/` folder. Adjust `config.yaml` to configure the workflow execution.
 
 ### Step 3: Install Snakemake
 
@@ -51,6 +51,7 @@ After successful execution, you can create a self-contained interactive HTML rep
 
     snakemake --report report.html
 
+To access the results, including files, plots and tables, navigate to the 'results' folder.
 
 ### References
 Al'Khafaji et al., (2021) High-throughput RNA isoform sequencing using programmable cDNA concatenation. bioRxiv, 10.01.462818
