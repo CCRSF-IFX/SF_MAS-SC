@@ -1,4 +1,10 @@
-# Snakemake workflow: MAS-SC
+# MAS-Seq for single-cell isoform sequencing
+
+The PacBio® HiFi sequencing technology allows for the sequencing of full-length RNA isoforms in single cells, while also capturing information about single-cell barcodes and unique molecular identifiers (UMIs). This capability provides unparalleled insights into single-cell biology.
+
+The Multiplexed Arrays Sequencing (MAS-Seq) method, as described by Al’Khafaji et al. in 2021, is a technique designed to increase throughput by concatenating cDNA molecules into longer fragments. These concatenated molecules are then sequenced using HiFi sequencing, and bioinformatics tools are employed to deconcatenate the sequences back into their original cDNA sequences. This approach enhances throughput and reduces the sequencing requirements, making single-cell isoform sequencing more cost-effective. 
+
+In the SF_MAS-SC workflow, full-length cDNA sequences are processed and classified against a reference annotation database. This classification allows for the identification of novel genes and isoforms. The output of this process includes count matrices at both the gene and isoform levels, which are compatible with tertiary analysis software [Seurat](https://satijalab.org/seurat/articles/pbmc3k_tutorial.html). This workflow enables comprehensive analysis of single-cell transcriptomes, providing valuable insights into gene expression and isoform diversity at the single-cell level.
 
 [![Snakemake](https://img.shields.io/badge/snakemake-≥5.7.0-brightgreen.svg)](https://snakemake.bitbucket.io)
 [![Build Status](https://travis-ci.org/snakemake-workflows/SF_MAS-SC.svg?branch=master)](https://travis-ci.org/snakemake-workflows/SF_MAS-SC)
