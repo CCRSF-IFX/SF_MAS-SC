@@ -54,8 +54,8 @@ After successful execution, you can create a self-contained interactive HTML rep
 To access the results, including files, plots and tables, navigate to the `results` folder.
 
 ### References
-Al'Khafaji et al., (2021) High-throughput RNA isoform sequencing using programmable cDNA concatenation. bioRxiv, 10.01.462818
+1:	Al'Khafaji et al., (2021) High-throughput RNA isoform sequencing using programmable cDNA concatenation. bioRxiv, 10.01.462818
 
-https://www.pacb.com/wp-content/uploads/Application-note-MAS-Seq-for-single-cell-isoform-sequencing.pdf
+2:	https://www.pacb.com/wp-content/uploads/Application-note-MAS-Seq-for-single-cell-isoform-sequencing.pdf
 
-https://isoseq.how/
+3:	https://isoseq.how/
