@@ -57,5 +57,6 @@ After successful execution, you can create a self-contained interactive HTML rep
 
 ### References
 Al'Khafaji et al., (2021) High-throughput RNA isoform sequencing using programmable cDNA concatenation. bioRxiv, 10.01.462818
+
 https://www.pacb.com/wp-content/uploads/Application-note-MAS-Seq-for-single-cell-isoform-sequencing.pdf
 
