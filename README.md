@@ -28,7 +28,7 @@ Configure the workflow according to your needs via editing the files in the `con
 
 Install Snakemake using [conda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html):
 
-    conda create -c bioconda -c conda-forge -n snakemake snakemake
+    conda create -c bioconda -c conda-forge -n $NAME snakemake
 
 For installation details, see the [instructions in the Snakemake documentation](https://snakemake.readthedocs.io/en/stable/getting_started/installation.html).
 
@@ -36,7 +36,7 @@ For installation details, see the [instructions in the Snakemake documentation](
 
 Activate the conda environment:
 
-    conda activate snakemake
+    conda activate $NAME
 
 Test your configuration by performing a dry-run via
 
