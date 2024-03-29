@@ -1,0 +1,6 @@
+name: skera
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - pbskera=1.2.0

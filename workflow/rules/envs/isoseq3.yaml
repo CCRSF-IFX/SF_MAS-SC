@@ -1,0 +1,9 @@
+name: isoseq
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - isoseq=4.0.0
+  - samtools
+   
