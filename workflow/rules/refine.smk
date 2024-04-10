@@ -1,6 +1,6 @@
 
 rule skera:
-    input: "data/" + sample + ".hifi.bam"
+    input: rawdir + "/" + sample + ".hifi.bam"
     output: "results/" + sample + ".segmented.bam"
     params: config['MAS_SMRTbell_adapters_barcodes']
     conda: "envs/skera.yaml" 
